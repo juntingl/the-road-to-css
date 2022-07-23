@@ -51,6 +51,11 @@ header {
 .heading-primary {
   color: #FFF;
   text-transform: uppercase;
+  /* 背面可见性，指定当元素背面朝向观察者时是否可见
+    在执行下面淡入动画时，会有一点向上位移的抖动，使动画看起来有点晃。
+    通过此属性来进行优化动画。
+  */
+  backface-visibility: hidden;
 }
 
 .heading-primary-main {
@@ -58,11 +63,56 @@ header {
   display: block;
   font-size: 60px;
   letter-spacing: 35px;
+  animation: moveInLeft 1s ease-out;
+
+  /* animation-name: moveInLeft;
+  animation-duration: 1s; */
+  /* 动画执行效果，控制动画节奏 */
+  /* animation-timing-function: ease-out; */
+
+  /*
+    animation-delay: 3s;
+    animation-iteration-count: 3;
+  */
 }
 
 .heading-primary-sub {
   display: block;
-  font-size: 2px;
+  font-size: 20px;
   font-weight: 700;
-  letter-spacing: 17.4px;
+  letter-spacing: 17.5px;
+  animation: moveInRight 1s ease-out;
+}
+
+/* 基础动画-从左淡入 */
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px)  ;
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* 基础动画-从右淡入 */
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
