@@ -1,0 +1,68 @@
+/**
+* Light green: #7ed56f
+* Medium green: #55c57a
+* Dark green: #28b485
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #fff;
+  padding: 30px;
+}
+
+header {
+  height: calc(95vh - 60px);
+  background-image:
+    linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)),
+    url("../assets/images/hero.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+
+}
+
+.logo {
+  height: 35px;
+}
+
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  /* 将平移元素，依据元素自身宽高进行，达到居中的目的 */
+  transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+.heading-primary-main {
+  /* 转换块级元素，占据一行 */
+  display: block;
+  font-size: 60px;
+  letter-spacing: 35px;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 2px;
+  font-weight: 700;
+  letter-spacing: 17.4px;
+}
