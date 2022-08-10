@@ -46,6 +46,7 @@ header {
   left: 50%;
   /* 将平移元素，依据元素自身宽高进行，达到居中的目的 */
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .heading-primary {
@@ -56,6 +57,7 @@ header {
     通过此属性来进行优化动画。
   */
   backface-visibility: hidden;
+  margin-bottom: 60px;
 }
 
 .heading-primary-main {
@@ -115,4 +117,31 @@ header {
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+/*
+ */
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 100px;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.btn-white {
+  background-color: #FFF;
+  color: #777;
 }
