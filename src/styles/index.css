@@ -118,9 +118,27 @@ header {
     transform: translateX(0);
   }
 }
+/* 基础动画-从底部淡入 */
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
 
-/*
- */
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.btn {
+  position: relative;
+}
+
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -144,4 +162,34 @@ header {
 .btn-white {
   background-color: #FFF;
   color: #777;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn-white::after {
+  background-color: #FFF;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn-animated {
+  animation: moveInBottom .5s ease-out .75s;
+  /* 动画填充模式
+   * 其动画填充模式之前、之后等其样式
+   */
+  animation-fill-mode: backwards;
 }
