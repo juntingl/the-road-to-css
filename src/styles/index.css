@@ -39,18 +39,18 @@ header {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
-.logo-box {
+.header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 
 }
 
-.logo {
+.header__logo {
   height: 3.5rem;
 }
 
-.text-box {
+.header__text-box {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -70,7 +70,7 @@ header {
   margin-bottom: 6rem;
 }
 
-.heading-primary-main {
+.heading-primary--main {
   /* 转换块级元素，占据一行 */
   display: block;
   font-size: 6rem;
@@ -88,7 +88,7 @@ header {
   */
 }
 
-.heading-primary-sub {
+.heading-primary--sub {
   display: block;
   font-size: 2rem;
   font-weight: 700;
@@ -170,7 +170,7 @@ header {
   box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
 }
 
-.btn-white {
+.btn--white {
   background-color: #FFF;
   color: #777;
 }
@@ -188,7 +188,7 @@ header {
   transition: all 0.4s;
 }
 
-.btn-white::after {
+.btn--white::after {
   background-color: #FFF;
 }
 
@@ -197,7 +197,7 @@ header {
   opacity: 0;
 }
 
-.btn-animated {
+.btn--animated {
   animation: moveInBottom .5s ease-out .75s;
   /* 动画填充模式
    * 其动画填充模式之前、之后等其样式

@@ -19,3 +19,18 @@ The Road to CSS
     - themes
     - abstracts
     - vendors
+
+## Sass
+
+Sass 是一个 CSS 的预处理器，是 CSS 的扩展。
+
+### 新增特性和功能
+
+- Variables
+- Nesting (嵌套)
+- Operators
+- Partials and imports
+- Mixins
+- Functions
+- Extends
+- Control directives
