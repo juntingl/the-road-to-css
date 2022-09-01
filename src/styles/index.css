@@ -50,7 +50,7 @@ header {
   text-align: center; }
 
 .heading-primary {
-  color: #FFF;
+  color: #fff;
   text-transform: uppercase;
   /* 背面可见性，指定当元素背面朝向观察者时是否可见
     在执行下面淡入动画时，会有一点向上位移的抖动，使动画看起来有点晃。
@@ -132,10 +132,10 @@ header {
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
   .btn--white {
-    background-color: #FFF;
+    background-color: #fff;
     color: #777; }
     .btn--white::after {
-      background-color: #FFF; }
+      background-color: #fff; }
   .btn::after {
     content: "";
     display: inline-block;
