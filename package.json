@@ -1,0 +1,14 @@
+{
+  "name": "the-road-to-css",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:JuntingLiu/the-road-to-css.git",
+  "author": "Junting <342766475@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "compile:sass": "node-sass src/sass/**.scss src/styles/index.css"
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
