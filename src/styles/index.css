@@ -26,59 +26,6 @@ body {
   padding: 3rem;
   box-sizing: border-box; }
 
-header {
-  height: calc(95vh - 60px);
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../assets/images/hero.jpg");
-  background-size: cover;
-  background-position: top;
-  position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
-
-.header__logo {
-  height: 3.5rem; }
-  .header__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem; }
-
-.header__text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  /* 将平移元素，依据元素自身宽高进行，达到居中的目的 */
-  transform: translate(-50%, -50%);
-  text-align: center; }
-
-.heading-primary {
-  color: #fff;
-  text-transform: uppercase;
-  /* 背面可见性，指定当元素背面朝向观察者时是否可见
-    在执行下面淡入动画时，会有一点向上位移的抖动，使动画看起来有点晃。
-    通过此属性来进行优化动画。
-  */
-  backface-visibility: hidden;
-  margin-bottom: 6rem; }
-  .heading-primary--main {
-    /* 转换块级元素，占据一行 */
-    display: block;
-    font-size: 6rem;
-    letter-spacing: 3.5rem;
-    animation: moveInLeft 1s ease-out;
-    /* animation-name: moveInLeft;
-    animation-duration: 1s; */
-    /* 动画执行效果，控制动画节奏 */
-    /* animation-timing-function: ease-out; */
-    /*
-      animation-delay: 3s;
-      animation-iteration-count: 3;
-    */ }
-  .heading-primary--sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.75rem;
-    animation: moveInRight 1s ease-out; }
-
 /* 基础动画-从左淡入 */
 @keyframes moveInLeft {
   0% {
@@ -111,6 +58,36 @@ header {
   100% {
     opacity: 1;
     transform: translate(0); } }
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  /* 背面可见性，指定当元素背面朝向观察者时是否可见
+    在执行下面淡入动画时，会有一点向上位移的抖动，使动画看起来有点晃。
+    通过此属性来进行优化动画。
+  */
+  backface-visibility: hidden;
+  margin-bottom: 6rem; }
+  .heading-primary--main {
+    /* 转换块级元素，占据一行 */
+    display: block;
+    font-size: 6rem;
+    letter-spacing: 3.5rem;
+    animation: moveInLeft 1s ease-out;
+    /* animation-name: moveInLeft;
+    animation-duration: 1s; */
+    /* 动画执行效果，控制动画节奏 */
+    /* animation-timing-function: ease-out; */
+    /*
+      animation-delay: 3s;
+      animation-iteration-count: 3;
+    */ }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+    animation: moveInRight 1s ease-out; }
 
 .btn {
   position: relative; }
@@ -153,3 +130,26 @@ header {
     * 其动画填充模式之前、之后等其样式
     */
     animation-fill-mode: backwards; }
+
+header {
+  height: calc(95vh - 60px);
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../assets/images/hero.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+
+.header__logo {
+  height: 3.5rem; }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+
+.header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  /* 将平移元素，依据元素自身宽高进行，达到居中的目的 */
+  transform: translate(-50%, -50%);
+  text-align: center; }

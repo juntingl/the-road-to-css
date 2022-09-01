@@ -6,7 +6,7 @@
   "author": "Junting <342766475@qq.com>",
   "license": "MIT",
   "scripts": {
-    "compile:sass": "node-sass src/sass/**.scss src/styles/index.css"
+    "compile:sass": "node-sass src/sass/**.scss src/styles/index.css -w"
   },
   "devDependencies": {
     "node-sass": "^7.0.1"

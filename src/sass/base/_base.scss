@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  /* 强制继承, CSS 社区推荐最佳实践 */
+  box-sizing: inherit;
+}
+
+html {
+  /* 基于浏览器给定的默认字体大小值（16px）进行百分比的缩放，CSS 社区推荐最佳实践。 */
+  /* Internet Explorer 9 不支持 rem 单位。 */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  color: $color-white;
+  padding: 3rem;
+  box-sizing: border-box;
+}
