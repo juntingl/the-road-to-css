@@ -1,0 +1,19 @@
+.row {
+  max-width: $grid-width;
+  margin: 0 auto;
+  background-color: #eee;
+
+  &:not(:last-child) {
+    margin-bottom: $grid-vertical;
+  }
+
+  .col-1-of-2 {
+    width: calc((100% - #{$grid-horizontal}) / 2);
+    background-color: red;
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: $grid-horizontal;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /**
+* COLORS
 * Light green: #7ed56f
 * Medium green: #55c57a
 * Dark green: #28b485
@@ -130,6 +131,19 @@ body {
     * 其动画填充模式之前、之后等其样式
     */
     animation-fill-mode: backwards; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  background-color: #eee; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2);
+    background-color: red;
+    float: left; }
+    .row .col-1-of-2:not(:last-child) {
+      margin-right: 6rem; }
 
 header {
   height: calc(95vh - 60px);

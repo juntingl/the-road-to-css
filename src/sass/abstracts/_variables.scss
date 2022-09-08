@@ -1,9 +1,9 @@
 /**
+* COLORS
 * Light green: #7ed56f
 * Medium green: #55c57a
 * Dark green: #28b485
 */
-
 $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
@@ -11,3 +11,8 @@ $color-primary-dark: #28b485;
 $color-grey-dark: #777;
 $color-white: #fff;
 $color-dark: #000;
+
+// GRID
+$grid-width: 114rem;
+$grid-vertical: 8rem;
+$grid-horizontal: 6rem;
