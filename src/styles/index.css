@@ -23,7 +23,7 @@ body {
   font-weight: 400;
   /* font-size: 16px; */
   line-height: 1.7;
-  color: #fff;
+  color: #777;
   padding: 3rem;
   box-sizing: border-box; }
 
@@ -90,6 +90,43 @@ body {
     letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-out; }
 
+.heading-secondary {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: .2rem;
+  transition: all .2s; }
+  .heading-secondary:hover {
+    transform: skewY(2deg) skewX(15deg);
+    text-shadow: 0.2rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem; }
+
 .btn {
   position: relative; }
   .btn:link, .btn:visited {
@@ -131,11 +168,26 @@ body {
     * 其动画填充模式之前、之后等其样式
     */
     animation-fill-mode: backwards; }
+  .btn-text:link, .btn-text:visited {
+    font-size: 1.6rem;
+    color: #55c57a;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid #55c57a;
+    padding: 3px;
+    transition: all .2s; }
+  .btn-text:hover {
+    background-color: #55c57a;
+    color: #fff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px); }
+  .btn-text:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(0px); }
 
 .row {
   max-width: 114rem;
-  margin: 0 auto;
-  background-color: #eee; }
+  margin: 0 auto; }
   .row::after {
     content: "";
     display: table;
@@ -143,7 +195,6 @@ body {
   .row:not(:last-child) {
     margin-bottom: 8rem; }
   .row [class^="col-"] {
-    background-color: orangered;
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
@@ -182,3 +233,8 @@ header {
   /* 将平移元素，依据元素自身宽高进行，达到居中的目的 */
   transform: translate(-50%, -50%);
   text-align: center; }
+
+.section-about {
+  background-color: #F7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh; }
