@@ -6,6 +6,7 @@ header {
   background-size: cover;
   background-position: top;
   position: relative;
+  // 倾斜截面设计实现方式 1：
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 

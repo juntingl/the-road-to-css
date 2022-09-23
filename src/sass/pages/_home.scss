@@ -3,3 +3,22 @@
   padding: 25rem 0;
   margin-top: -20vh;
 }
+
+.section-features {
+  padding: 20rem 0;
+  // 背景图片加上蒙层渐变色
+  background-image:
+    linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8),
+    ),
+    url("../assets/images/nat-4.jpg");
+  background-size: cover;
+  // 倾斜截面设计实现方式2：
+  transform: skewY(-7deg);
+  margin-top: -12rem;
+  & > * { // 所有子元素归位
+    transform: skewY(7deg);
+  }
+}
